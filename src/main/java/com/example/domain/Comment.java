@@ -5,12 +5,12 @@ public class Comment {
 
 	private Integer id;
 	private String name;
-	private String comment;
+	private String content;
 	private Integer articleId;
 	
 	@Override
 	public String toString() {
-		return "Comment [id=" + id + ", name=" + name + ", comment=" + comment + ", articleId=" + articleId + "]";
+		return "Comment [id=" + id + ", name=" + name + ", comment=" + content + ", articleId=" + articleId + "]";
 	}
 
 	public Integer getId() {
@@ -29,12 +29,12 @@ public class Comment {
 		this.name = name;
 	}
 
-	public String getComment() {
-		return comment;
+	public String getContent() {
+		return content;
 	}
 
-	public void setComment(String comment) {
-		this.comment = comment;
+	public void setContent(String content) {
+		this.content = content;
 	}
 
 	public Integer getArticleId() {

@@ -29,7 +29,7 @@ public class AriticleRepository {
 	};
 	
 	public List<Article> findAll(){
-		String sql = "SELECT id, name, content FROM articles ORDER BY id";
+		String sql = "SELECT id, name, content FROM articles ORDER BY id DESC";
 		
 		List<Article> articleList = template.query(sql, ARTICLE_ROW_MAPPER);
 		
